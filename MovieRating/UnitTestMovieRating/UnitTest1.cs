@@ -27,13 +27,12 @@ namespace UnitTestMovieRating
         {
             Assert.AreEqual(m.AverageGradeOfReviewerIsGiven(id), act);
         }
-        
-        [TestMethod]
-        public void MoviesWithSameGrade()
+
+        [DataRow(2, 4, 2)]
+        [DataTestMethod]
+        public void ReviewerGivenGradeOfMovie(int id, int grade, int exp)
         {
-            int id = 2;
-            int grade = 4;
-            Assert.AreEqual(m.VotesInGivenGrade(id, grade), 2);
+            Assert.AreEqual(m.VotesInGivenGrade(id, grade), exp);
         }
 
         [DataRow(30878, 3)]
