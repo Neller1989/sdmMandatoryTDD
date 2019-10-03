@@ -88,16 +88,11 @@ namespace MovieRating
         //opgave 3
         public int VotesInGivenGrade(int id, int grade)
         {
-            var counter = 0;
-
             List<Rating> reviewer = new List<Rating>();
-            var grades = reviewer.Where(p => p.Reviewer == id && p.Grade == grade);
-            foreach (var item in grades)
-            {
-                counter++;
-            }
+            reviewer = movieRating.Where(p => p.Reviewer == id && p.Grade == grade).ToList();
+            var result = reviewer.Select(p => p.Grade).Count();
 
-            return counter;
+            return result;
         }
 
         //opgave 4
