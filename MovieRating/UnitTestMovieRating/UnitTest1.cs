@@ -6,7 +6,8 @@ namespace UnitTestMovieRating
     [TestClass]
     public class UnitTest1
     {
-        readonly Logic m = new Logic("C:/Users/Bruger/source/repos/MovieRating/MovieRating/Data/ratingsTest1.json");
+        //C:/Users/Bruger/source/repos/MovieRating/MovieRating/Data/ratingsTest1.json
+        readonly Logic m = new Logic(@"C:\Users\Anders\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\Data\ratingsTest1.json");
 
 
         [DataRow(1, 4)]
@@ -27,11 +28,14 @@ namespace UnitTestMovieRating
         {
             Assert.AreEqual(m.AverageGradeOfReviewerIsGiven(id), act);
         }
-
-        [TestMethod]
-        public void MoviesWithSameGrade()
+        [DataRow(1, 4)]
+        [DataRow(2, 4)]
+        [DataRow(4, 3)]
+        [DataTestMethod]
+        public void MoviesWithSameGrade(int id, int grade)
         {
-
+            var count = m.VotesInGivenGrade(grade, id);
+            //Assert.AreEqual(count);
         }
     
         [TestMethod]

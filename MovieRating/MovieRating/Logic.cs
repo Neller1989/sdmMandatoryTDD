@@ -78,7 +78,7 @@ namespace MovieRating
         //opgave 2
         public double AverageGradeOfReviewerIsGiven(int id)
         {
-            double gnm = 0;
+            
             
             List<Rating> avgGrade = new List<Rating>();
             avgGrade = movieRating.Where(p => p.Reviewer == id ).ToList();
@@ -88,9 +88,18 @@ namespace MovieRating
         }
 
         //opgave 3
-        public int VotesInGivenGrade(int grade, int id)
+        public int VotesInGivenGrade(int id, int grade)
         {
-            throw new NotImplementedException();
+            var counter = 0;
+            
+            List<Rating> reviewer = new List<Rating>();
+            var grades = reviewer.Where(p => p.Reviewer == id && p.Grade == grade);
+            foreach (var item in grades)
+            {
+                counter++;
+            }
+
+            return counter;
         }
 
         //opgave 4
