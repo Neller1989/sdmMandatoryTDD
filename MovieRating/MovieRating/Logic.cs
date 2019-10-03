@@ -27,7 +27,7 @@ namespace MovieRating
             }/*
 
             //Skal finde ud af hvad der sker ud? og den ikke virker senere
-            using (StreamReader file = new StreamReader(fileName)) 
+            using (StreamReader file = new StreamReader(fileName))
             using (JsonTextReader reader = new JsonTextReader(file))
             {
                 reader.SupportMultipleContent = true;
@@ -82,13 +82,22 @@ namespace MovieRating
             avgGrade = movieRating.Where(p => p.Reviewer == id ).ToList();
             var result = avgGrade.Select(p => p.Grade).Average();
 
-            return result;    
+            return result;
         }
 
         //opgave 3
-        public int VotesInGivenGrade(int grade, int id)
+        public int VotesInGivenGrade(int id, int grade)
         {
-            throw new NotImplementedException();
+            var counter = 0;
+
+            List<Rating> reviewer = new List<Rating>();
+            var grades = reviewer.Where(p => p.Reviewer == id && p.Grade == grade);
+            foreach (var item in grades)
+            {
+                counter++;
+            }
+
+            return counter;
         }
 
         //opgave 4
@@ -107,7 +116,7 @@ namespace MovieRating
             List<Rating> seen = new List<Rating>();
             seen = movieRating.Where(p => p.Movie == movieId).ToList();
             double result = seen.Select(p => p.Grade).Average();
-            
+
             return result;
         }
 
@@ -157,5 +166,5 @@ namespace MovieRating
 
 
 
-    } 
+    }
 }
