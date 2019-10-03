@@ -1539,6 +1539,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "Microsoft.CodeCoverage": "16.0.1",
           "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
@@ -5573,29 +5574,31 @@
     ".NETCoreApp,Version=v2.2": [
       "MSTest.TestAdapter >= 1.4.0",
       "MSTest.TestFramework >= 1.4.0",
+      "Microsoft.CodeCoverage >= 16.0.1",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
       "Microsoft.NETCore.App >= 2.2.0",
-      "MovieRating >= 1.0.0"
+      "MovieRating >= 1.0.0",
+      "Newtonsoft.Json >= 12.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anders\\.nuget\\packages\\": {},
+    "C:\\Users\\nikla\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
+      "projectUniqueName": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
       "projectName": "UnitTestMovieRating",
-      "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
-      "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\obj\\",
+      "projectPath": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
+      "packagesPath": "C:\\Users\\nikla\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikla\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5608,8 +5611,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {
-              "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj"
+            "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {
+              "projectPath": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj"
             }
           }
         }
@@ -5631,6 +5634,10 @@
             "target": "Package",
             "version": "[1.4.0, )"
           },
+          "Microsoft.CodeCoverage": {
+            "target": "Package",
+            "version": "[16.0.1, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.0.1, )"
@@ -5640,6 +5647,10 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.2, )"
           }
         },
         "imports": [

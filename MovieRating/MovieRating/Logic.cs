@@ -78,8 +78,6 @@ namespace MovieRating
         //opgave 2
         public double AverageGradeOfReviewerIsGiven(int id)
         {
-            double gnm = 0;
-            
             List<Rating> avgGrade = new List<Rating>();
             avgGrade = movieRating.Where(p => p.Reviewer == id ).ToList();
             var result = avgGrade.Select(p => p.Grade).Average();
@@ -96,13 +94,21 @@ namespace MovieRating
         //opgave 4
         public int HowManyHaveSeenThisMovie(int movieId)
         {
-            throw new NotImplementedException();
+            List<Rating> seen = new List<Rating>();
+            seen = movieRating.Where(p => p.Movie == movieId).ToList();
+            var result = seen.Select(p => p.Grade).Count();
+
+            return result;
         }
 
         //opgave 5
         public double AverageGradeOfMovie(int movieId)
         {
-            throw new NotImplementedException();
+            List<Rating> seen = new List<Rating>();
+            seen = movieRating.Where(p => p.Movie == movieId).ToList();
+            double result = seen.Select(p => p.Grade).Average();
+            
+            return result;
         }
 
         //opgave 6

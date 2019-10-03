@@ -20,3 +20,14 @@ C:\Users\Anders\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Deb
 C:\Users\Anders\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.AssemblyInfo.cs
 C:\Users\Anders\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.dll
 C:\Users\Anders\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.pdb
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\bin\Debug\netcoreapp2.2\MovieRating.deps.json
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\bin\Debug\netcoreapp2.2\MovieRating.runtimeconfig.json
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\bin\Debug\netcoreapp2.2\MovieRating.runtimeconfig.dev.json
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\bin\Debug\netcoreapp2.2\MovieRating.dll
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\bin\Debug\netcoreapp2.2\MovieRating.pdb
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.csproj.CoreCompileInputs.cache
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.AssemblyInfoInputs.cache
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.AssemblyInfo.cs
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.dll
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.pdb
+C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\obj\Debug\netcoreapp2.2\MovieRating.csprojAssemblyReference.cache
