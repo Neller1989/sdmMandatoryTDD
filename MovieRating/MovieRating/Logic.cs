@@ -19,10 +19,10 @@ namespace MovieRating
                 string j = sr.ReadToEnd();
                 movieRating = JsonConvert.DeserializeObject<IEnumerable<Rating>>(j);
 
-                foreach (var item in movieRating)
-                {
-                    Console.WriteLine("{0} : Reviewer ,  {1} : MovieId ,  {2} : Rating ,  {3} : DateTime" , item.Reviewer , item.Movie, item.Grade , item.Date ) ;
-                }
+                //foreach (var item in movieRating)
+                //{
+                //    Console.WriteLine("{0} : Reviewer ,  {1} : MovieId ,  {2} : Rating ,  {3} : DateTime" , item.Reviewer , item.Movie, item.Grade , item.Date ) ;
+                //}
 
             }/*
 
@@ -118,13 +118,22 @@ namespace MovieRating
         //opgave 6
         public int HowManyGradesRecievedInGivenMovie(int movieId, int givenGrade)
         {
-            throw new NotImplementedException();
+            List<Rating> gm = new List<Rating>();
+            gm = movieRating.Where(p => p.Movie == movieId && p.Grade == givenGrade).ToList();
+            var result = gm.Select(p => p.Grade).Count();
+
+            return result;
         }
 
         //opgave 7
-        public int TopRatedMovies(int movieId)
+        public List<int> TopRatedMovies()
         {
-            throw new NotImplementedException();
+            List<Rating> tm = new List<Rating>();
+            List<int> result = new List<int>();
+            tm = movieRating.Where(p => p.Grade == 5).ToList();
+            result = tm.Select(p => p.Movie).Distinct().ToList();
+
+            return result;
         }
 
         //opgave 8

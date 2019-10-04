@@ -1,4 +1,6 @@
-﻿namespace MovieRating
+﻿using System.Collections.Generic;
+
+namespace MovieRating
 {
     public interface ILogic
     {
@@ -28,7 +30,7 @@
 
         //opgave 7
         //What is the id(s) of the movie(s) with the highest number of top rates(5)?
-        int TopRatedMovies(int movieId);
+        List<int> TopRatedMovies();
 
         //opgave 8
         //What reviewer(s) had done most reviews?
