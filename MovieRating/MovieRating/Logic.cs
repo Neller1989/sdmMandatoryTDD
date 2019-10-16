@@ -24,46 +24,9 @@ namespace MovieRating
                 //    Console.WriteLine("{0} : Reviewer ,  {1} : MovieId ,  {2} : Rating ,  {3} : DateTime" , item.Reviewer , item.Movie, item.Grade , item.Date ) ;
                 //}
 
-            }/*
-
-            //Skal finde ud af hvad der sker ud? og den ikke virker senere
-            using (StreamReader file = new StreamReader(fileName))
-            using (JsonTextReader reader = new JsonTextReader(file))
-            {
-                reader.SupportMultipleContent = true;
-
-                var serializer = new JsonSerializer();
-                while (reader.Read())
-                {
-                    if (reader.TokenType == JsonToken.StartObject)
-                    {
-                        Rating r = serializer.Deserialize<Rating>(reader);
-
-                        Console.WriteLine("movie : " + r.Movie + " reviewer : " + r.Reviewer + " Grade: " + r.Grade + " Date :" + r.Date);
-                        Console.WriteLine("1");
-                    }
-                }
             }
-            /*
-            //ny metode som ikke virker
 
-            JArray movieToken = JArray.Parse(fileName);
-
-            movieRating = movieToken.Select(p => new Rating
-            {
-                Reviewer = (int)p["Reviewer"],
-                Movie = (int)p["Movies"],
-                Grade = (int)p["Grade"],
-                //Movie = p["Movies"].Select(t => (float)t).ToList(),
-                //Grade = p["Grade"].Select(t => (int)t).ToList(),
-                Date = (DateTime)p["Date"]
-            }).ToList();
-
-            foreach (var item in movieRating)
-            {
-                Console.WriteLine("" + item);
-                Console.WriteLine("2");
-            }*/
+            
 
         }
 
@@ -72,15 +35,34 @@ namespace MovieRating
         {
             List<Rating> movies = new List<Rating>();
             movies = movieRating.Where(p => p.Reviewer == id).ToList();
-            return movies.Count;
+            //return movies.Count;
+
+            int rev = 0;
+            foreach (Rating movie in movies)
+            {
+                if (movie.Reviewer == id)
+                {
+                    rev++;
+                }
+            }
+            if (rev == 0)
+            {
+                throw new InvalidDataException("Reviewer not found");
+            }
+            else
+            {
+                return rev;
+            }
+
         }
+
 
         //opgave 2
         public double AverageGradeOfReviewerIsGiven(int id)
         {
             List<Rating> avgGrade = new List<Rating>();
             avgGrade = movieRating.Where(p => p.Reviewer == id ).ToList();
-            var result = avgGrade.Select(p => p.Grade).Average();
+            double result = avgGrade.Select(p => p.Grade).Average();
 
             return result;
         }

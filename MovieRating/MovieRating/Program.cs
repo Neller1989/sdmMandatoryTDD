@@ -7,7 +7,7 @@ namespace MovieRating
         static void Main(string[] args)
         {
             //@"C:\Users\Bruger\source\repos\MovieRating\MovieRating\Data\ratingsTest.txt"
-            Logic l = new Logic(@"C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\Data\ratingsTest1.json");
+            Logic l = new Logic(@"C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\Data\ratings.json");
 
 
             Console.Write("Film med 5 stjerner : ");
