@@ -11,7 +11,7 @@ namespace UnitTestMovieRating
     public class UnitTestPerformance
     {
 
-        readonly LogicOpt m = new LogicOpt(@"C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\Data\ratings.json");
+        private static LogicOpt m = new LogicOpt(@"C:\Users\Anders\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\Data\ratings.json");
 
         private readonly int MOVIEID = 1488844;
         private readonly int REVIEWERID = 1;
