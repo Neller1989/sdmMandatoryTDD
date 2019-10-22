@@ -11,7 +11,7 @@ namespace UnitTestMovieRating
     public class UnitTestPerformance
     {
 
-        private static LogicOpt m = new LogicOpt(@"C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\Data\ratings.json");
+        private static LogicOpt m = new LogicOpt(@"C:\Users\Anders\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\Data\ratings.json");
 
         private readonly int MOVIEID = 1488844;
         private readonly int REVIEWERID = 1;
@@ -33,7 +33,7 @@ namespace UnitTestMovieRating
 
 
         [TestMethod]
-        public void Opgave1()
+        public void LadDenLæse()
         {
             for (int i = 1; i <= 5; i++)
             {
@@ -46,6 +46,19 @@ namespace UnitTestMovieRating
             }
         }
 
+        [TestMethod]
+        public void Opgave1()
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                Stopwatch sw = Stopwatch.StartNew();
+                m.ReadNumberOfViewsById(REVIEWERID);
+                sw.Stop();
+                double time = sw.ElapsedMilliseconds / 1000.0;
+
+                Assert.IsTrue(time <= 4);
+            }
+        }
 
         [TestMethod]
         public void Opgave2()
