@@ -25,7 +25,6 @@ C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\UnitTestMovieRating\
 C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\UnitTestMovieRating\bin\Debug\netcoreapp2.2\MovieRating.dll
 C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\UnitTestMovieRating\bin\Debug\netcoreapp2.2\MovieRating.pdb
 C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\UnitTestMovieRating\obj\Debug\netcoreapp2.2\UnitTestMovieRating.csprojAssemblyReference.cache
-C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\UnitTestMovieRating\obj\Debug\netcoreapp2.2\UnitTestMovieRating.csproj.CoreCompileInputs.cache
 C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\UnitTestMovieRating\obj\Debug\netcoreapp2.2\UnitTestMovieRating.AssemblyInfoInputs.cache
 C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\UnitTestMovieRating\obj\Debug\netcoreapp2.2\UnitTestMovieRating.AssemblyInfo.cs
 C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\UnitTestMovieRating\obj\Debug\netcoreapp2.2\UnitTestMovieRating.csproj.CopyComplete

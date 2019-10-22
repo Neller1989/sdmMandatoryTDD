@@ -9,7 +9,7 @@ namespace MovieRating
 {
     public class LogicOpt : ILogic
     {
-         List<Rating> movieRating;
+        List<Rating> movieRating;
 
         public LogicOpt(string fileName)
         {
@@ -24,10 +24,7 @@ namespace MovieRating
         public int ReadNumberOfViewsById(int id)
         {
             int viewer = 0;
-            if (viewer == 0)
-            {
-                throw new InvalidDataException("Reviewer not found");
-            }
+            
             foreach (var movie in movieRating)
             {
                 if (movie.Reviewer == id)
@@ -35,11 +32,8 @@ namespace MovieRating
                     viewer++;
                 }
             }
+
             return viewer;
-            
-            
-                
-            
         }
 
         //opgave2

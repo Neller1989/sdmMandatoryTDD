@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj": {}
+    "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {
+    "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj",
+        "projectUniqueName": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj",
         "projectName": "MovieRating",
-        "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj",
-        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\obj\\",
+        "projectPath": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj",
+        "packagesPath": "C:\\Users\\nikla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,27 +57,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj": {
+    "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
+        "projectUniqueName": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
         "projectName": "UnitTestMovieRating",
-        "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
-        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\obj\\",
+        "projectPath": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
+        "packagesPath": "C:\\Users\\nikla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +96,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {
-                "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj"
+              "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {
+                "projectPath": "C:\\Users\\nikla\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj"
               }
             }
           }
@@ -133,10 +139,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
