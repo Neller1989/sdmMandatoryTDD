@@ -5588,11 +5588,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
+      "projectUniqueName": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
       "projectName": "UnitTestMovieRating",
-      "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
+      "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\UnitTestMovieRating\\UnitTestMovieRating.csproj",
       "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\UnitTestMovieRating\\obj\\",
+      "outputPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\UnitTestMovieRating\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5611,8 +5611,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {
-              "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj"
+            "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\MovieRating.csproj": {
+              "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\MovieRating.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {}
+    "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\MovieRating.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj": {
+    "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\MovieRating.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj",
+        "projectUniqueName": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\MovieRating.csproj",
         "projectName": "MovieRating",
-        "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj",
+        "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\MovieRating.csproj",
         "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMandatoryTDD\\MovieRating\\MovieRating\\obj\\",
+        "outputPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
