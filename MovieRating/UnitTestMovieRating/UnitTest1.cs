@@ -6,7 +6,7 @@ namespace UnitTestMovieRating
     [TestClass]
     public class UnitTest1
     {
-        readonly Logic m = new Logic(@"C:\Users\nikla\Documents\GitHub\sdmMandatoryTDD\MovieRating\MovieRating\Data\ratingsTest1.json");
+        readonly Logic m = new Logic(@"Data\ratingsTest1.json");
 
         //opgave 1
         [DataRow(1, 4)]

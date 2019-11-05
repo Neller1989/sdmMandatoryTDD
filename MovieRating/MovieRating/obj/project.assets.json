@@ -776,23 +776,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anders\\.nuget\\packages\\": {},
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\MovieRating.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\source\\repos\\MovieRating\\MovieRating\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj",
       "projectName": "MovieRating",
-      "projectPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\MovieRating.csproj",
-      "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anders\\Documents\\GitHub\\sdmMovieRatingCompulsory\\MovieRating\\MovieRating\\obj\\",
+      "projectPath": "C:\\Users\\Bruger\\source\\repos\\MovieRating\\MovieRating\\sdmMandatoryTDD\\MovieRating\\MovieRating\\MovieRating.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\source\\repos\\MovieRating\\MovieRating\\sdmMandatoryTDD\\MovieRating\\MovieRating\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
