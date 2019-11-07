@@ -6,7 +6,7 @@ namespace UnitTestMovieRating
     [TestClass]
     public class UnitTest1
     {
-        readonly Logic m = new Logic(@"Data\ratingsTest1.json");
+        readonly Logic m = new Logic(@"..\..\..\ratingsTest1.json");
 
         //opgave 1
         [DataRow(1, 4)]
