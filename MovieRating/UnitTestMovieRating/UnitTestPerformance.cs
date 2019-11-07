@@ -42,7 +42,7 @@ namespace UnitTestMovieRating
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= 30);
+                Assert.IsTrue(time <= 24);
             }
         }
 
