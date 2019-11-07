@@ -12,11 +12,11 @@ namespace UnitTestMovieRating
     {
         private static LogicOpt m = new LogicOpt(@"..\..\..\ratingsTest1.json");
 
-        private readonly int MOVIEID = 1488844;
-        private readonly int REVIEWERID = 1;
-        private readonly int GRADETOTEST = 3;
-        private readonly int TIMETOPASS = 4;
-        private readonly double TIMETOFAIL = 0.00001; 
+        private readonly int MOVIE_ID = 1488844;
+        private readonly int REVIEWER_ID = 1;
+        private readonly int GRADE_TO_TEST = 3;
+        private readonly int TIME_TO_PASS = 4;
+        private readonly double TIME_TO_FAIL = 4; 
 
         private double getAverageTime(Action ac, int repeats)
         {
@@ -40,11 +40,11 @@ namespace UnitTestMovieRating
             for (int i = 1; i <= 5; i++)
             {
                 Stopwatch sw = Stopwatch.StartNew();
-                m.ReadNumberOfViewsById(REVIEWERID);
+                m.ReadNumberOfViewsById(REVIEWER_ID);
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= TIMETOFAIL);
+                Assert.IsTrue(time <= TIME_TO_FAIL);
             }
         }
 
@@ -54,11 +54,11 @@ namespace UnitTestMovieRating
             for (int i = 1; i <= 5; i++)
             {
                 Stopwatch sw = Stopwatch.StartNew();
-                m.ReadNumberOfViewsById(REVIEWERID);
+                m.ReadNumberOfViewsById(REVIEWER_ID);
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= TIMETOPASS);
+                Assert.IsTrue(time <= TIME_TO_PASS);
             }
         }
 
@@ -68,11 +68,11 @@ namespace UnitTestMovieRating
             for (int i = 1; i <= 5; i++)
             {
                 Stopwatch sw = Stopwatch.StartNew();
-                m.AverageGradeOfReviewerIsGiven(REVIEWERID);
+                m.AverageGradeOfReviewerIsGiven(REVIEWER_ID);
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= TIMETOPASS);
+                Assert.IsTrue(time <= TIME_TO_PASS);
             }
         }
 
@@ -82,11 +82,11 @@ namespace UnitTestMovieRating
             for (int i = 1; i <= 5; i++)
             {
                 Stopwatch sw = Stopwatch.StartNew();
-                m.VotesInGivenGrade(GRADETOTEST, REVIEWERID);
+                m.VotesInGivenGrade(GRADE_TO_TEST, REVIEWER_ID);
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= TIMETOPASS);
+                Assert.IsTrue(time <= TIME_TO_PASS);
             }
         }
 
@@ -97,12 +97,12 @@ namespace UnitTestMovieRating
             {
 
                 Stopwatch sw = Stopwatch.StartNew();
-                m.HowManyHaveSeenThisMovie(MOVIEID);
+                m.HowManyHaveSeenThisMovie(MOVIE_ID);
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
 
-                Assert.IsTrue(time <= TIMETOPASS);
+                Assert.IsTrue(time <= TIME_TO_PASS);
             }
         }
 
@@ -113,12 +113,12 @@ namespace UnitTestMovieRating
             {
 
                 Stopwatch sw = Stopwatch.StartNew();
-                m.AverageGradeOfMovie(MOVIEID);
+                m.AverageGradeOfMovie(MOVIE_ID);
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
 
-                Assert.IsTrue(time <= TIMETOPASS);
+                Assert.IsTrue(time <= TIME_TO_PASS);
             }
         }
 
