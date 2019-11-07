@@ -11,10 +11,13 @@ namespace UnitTestMovieRating
     public class UnitTestPerformance
     {
 
-        private static LogicOpt m = new LogicOpt(@"Data\ratings.json");
+        private static LogicOpt m = new LogicOpt(@"Data\ratingsTest1.json");
 
         private readonly int MOVIEID = 1488844;
         private readonly int REVIEWERID = 1;
+        private readonly int GRADETOTEST = 3;
+        private readonly int TIMETOPASS = 4;
+        private readonly double TIMETOFAIL = 0.1; 
 
         private double getAverageTime(Action ac, int repeats)
         {
@@ -42,7 +45,7 @@ namespace UnitTestMovieRating
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= 4);
+                Assert.IsTrue(time <= TIMETOFAIL);
             }
         }
 
@@ -56,7 +59,7 @@ namespace UnitTestMovieRating
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= 4);
+                Assert.IsTrue(time <= TIMETOPASS);
             }
         }
 
@@ -70,7 +73,7 @@ namespace UnitTestMovieRating
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= 4);
+                Assert.IsTrue(time <= TIMETOPASS);
             }
         }
 
@@ -80,11 +83,11 @@ namespace UnitTestMovieRating
             for (int i = 1; i <= 5; i++)
             {
                 Stopwatch sw = Stopwatch.StartNew();
-                m.VotesInGivenGrade(REVIEWERID, 5);
+                m.VotesInGivenGrade(GRADETOTEST, REVIEWERID);
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= 4);
+                Assert.IsTrue(time <= TIMETOPASS);
             }
         }
 
@@ -100,7 +103,7 @@ namespace UnitTestMovieRating
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
 
-                Assert.IsTrue(time <= 4);
+                Assert.IsTrue(time <= TIMETOPASS);
             }
         }
 
@@ -116,7 +119,7 @@ namespace UnitTestMovieRating
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
 
-                Assert.IsTrue(time <= 4);
+                Assert.IsTrue(time <= TIMETOPASS);
             }
         }
 
