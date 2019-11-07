@@ -10,8 +10,7 @@ namespace UnitTestMovieRating
     [TestClass]
     public class UnitTestPerformance
     {
-
-        private static LogicOpt m = new LogicOpt(@"Data\ratingsTest1.json");
+        private static LogicOpt m = new LogicOpt(@"ratingsTest1.json");
 
         private readonly int MOVIEID = 1488844;
         private readonly int REVIEWERID = 1;
