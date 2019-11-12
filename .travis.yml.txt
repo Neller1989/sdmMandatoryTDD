@@ -1,7 +1,7 @@
 language: csharp
 mono: none
 dotnet: 2.2
-solution: sdmMandatoryTDD.sln
+solution: MovieRating.sln
 
 script:
  - dotnet restore
