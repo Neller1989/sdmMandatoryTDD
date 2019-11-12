@@ -16,7 +16,7 @@ namespace UnitTestMovieRating
         private readonly int REVIEWER_ID = 1;
         private readonly int GRADE_TO_TEST = 3;
         private readonly int TIME_TO_PASS = 4;
-        private readonly double TIME_TO_FAIL = 4; 
+        private readonly double TIME_TO_FAIL = 0.000001; 
 
         private double getAverageTime(Action ac, int repeats)
         {
