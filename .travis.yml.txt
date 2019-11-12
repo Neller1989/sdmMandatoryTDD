@@ -6,4 +6,4 @@ solution: MovieRating.sln
 script:
  - dotnet restore
  - dotnet build
- - dotnet test MovieRating/TddXunitTest/TddXunitTest.csproj
+ - dotnet test TddXunitTest/TddXunitTest.csproj
