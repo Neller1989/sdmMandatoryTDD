@@ -1,14 +1,14 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MovieRating;
+﻿using MovieRating;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Diagnostics;
+using System.Text;
+using Xunit;
 
-namespace UnitTestMovieRating
+namespace TddXunitTest
 {
-    [TestClass]
-    public class UnitTestPerformance
+    
+    public class XunitTestPerformance
     {
         private static LogicOpt m = new LogicOpt(@"..\..\..\ratingsTest1.json");
 
@@ -16,7 +16,7 @@ namespace UnitTestMovieRating
         private readonly int REVIEWER_ID = 1;
         private readonly int GRADE_TO_TEST = 3;
         private readonly int TIME_TO_PASS = 4;
-        private readonly double TIME_TO_FAIL = 35; 
+        private readonly double TIME_TO_FAIL = 4;
 
         private double getAverageTime(Action ac, int repeats)
         {
@@ -34,7 +34,7 @@ namespace UnitTestMovieRating
         }
 
 
-        [TestMethod]
+        [Fact]
         public void LadDenLæse()
         {
             for (int i = 1; i <= 5; i++)
@@ -44,11 +44,11 @@ namespace UnitTestMovieRating
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= TIME_TO_FAIL);
+                Assert.True(time <= TIME_TO_FAIL);
             }
         }
 
-        [TestMethod]
+        [Fact]
         public void Opgave1()
         {
             for (int i = 1; i <= 5; i++)
@@ -58,11 +58,11 @@ namespace UnitTestMovieRating
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= TIME_TO_PASS);
+                Assert.True(time <= TIME_TO_PASS);
             }
         }
 
-        [TestMethod]
+        [Fact]
         public void Opgave2()
         {
             for (int i = 1; i <= 5; i++)
@@ -72,11 +72,11 @@ namespace UnitTestMovieRating
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= TIME_TO_PASS);
+                Assert.True(time <= TIME_TO_PASS);
             }
         }
 
-        [TestMethod]
+        [Fact]
         public void Opgave3()
         {
             for (int i = 1; i <= 5; i++)
@@ -86,11 +86,11 @@ namespace UnitTestMovieRating
                 sw.Stop();
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
-                Assert.IsTrue(time <= TIME_TO_PASS);
+                Assert.True(time <= TIME_TO_PASS);
             }
         }
 
-        [TestMethod]
+        [Fact]
         public void Opgave4()
         {
             for (int i = 1; i <= 5; i++)
@@ -102,11 +102,11 @@ namespace UnitTestMovieRating
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
 
-                Assert.IsTrue(time <= TIME_TO_PASS);
+                Assert.True(time <= TIME_TO_PASS);
             }
         }
 
-        [TestMethod]
+        [Fact]
         public void Opgave5()
         {
             for (int i = 1; i <= 5; i++)
@@ -118,9 +118,10 @@ namespace UnitTestMovieRating
                 double time = sw.ElapsedMilliseconds / 1000.0;
 
 
-                Assert.IsTrue(time <= TIME_TO_PASS);
+                Assert.True(time <= TIME_TO_PASS);
             }
         }
+
 
     }
 }
