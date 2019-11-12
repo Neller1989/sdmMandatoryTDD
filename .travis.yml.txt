@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 2.2
+solution: sdmMandatoryTDD.sln
+
+script:
+ - dotnet restore
+ - dotnet build
+ - dotnet test MovieRating/TddXunitTest/TddXunitTest.csproj
